@@ -6,9 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:http/http.dart' as http;
+<<<<<<< HEAD
 // import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_webview_pro/webview_flutter.dart';
 // import 'package:flutter_webview_pro/webview_flutter.dart';
+=======
+import 'package:webview_flutter/webview_flutter.dart';
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
 
 class TimFlutterWavePay extends StatefulWidget {
   final data;
@@ -119,8 +123,12 @@ class _TimFlutterWavePayState extends State<TimFlutterWavePay> {
                       _webViewController.clearCache();
                       // print(d2);
                       if (d2["status"] == "success") {
+<<<<<<< HEAD
                         ScaffoldMessenger.of(context)
                             .showSnackBar(const SnackBar(
+=======
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
                           content: Text(
                             "Transaction verified!, redirecting...",
                             style: TextStyle(color: Colors.white),
@@ -143,8 +151,12 @@ class _TimFlutterWavePayState extends State<TimFlutterWavePay> {
                           }
                         });
                       } else {
+<<<<<<< HEAD
                         ScaffoldMessenger.of(context)
                             .showSnackBar(const SnackBar(
+=======
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
                           content: Text(
                             "Transaction failed!",
                             style: TextStyle(color: Colors.white),

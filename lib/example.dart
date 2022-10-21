@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'dart:convert';
+=======
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:tim_flutterwave/core/tim_flutterwave.dart';
 
+<<<<<<< HEAD
 class TimFlutterExample extends StatefulWidget {
   const TimFlutterExample({Key? key}) : super(key: key);
 
@@ -12,13 +16,26 @@ class TimFlutterExample extends StatefulWidget {
 }
 
 class _TimFlutterExampleState extends State<TimFlutterExample> {
+=======
+class AdeFlutterExample extends StatefulWidget {
+  const AdeFlutterExample({Key? key}) : super(key: key);
+
+  @override
+  State<AdeFlutterExample> createState() => _AdeFlutterExampleState();
+}
+
+class _AdeFlutterExampleState extends State<AdeFlutterExample> {
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
   //controllers
   final TextEditingController _amountController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _fullNameController = TextEditingController();
+<<<<<<< HEAD
   bool? res = false;
   late String res1;
+=======
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +89,12 @@ class _TimFlutterExampleState extends State<TimFlutterExample> {
                       'email': _emailController.text,
                       'phone': _phoneController.text,
                       'name': _fullNameController.text,
+<<<<<<< HEAD
                       'payment_options':
                           'card, banktransfer, ussd, mpesa, mobile_money_rwanda,mobile_money_uganda, mobile_money_zambia, mobile_money_ghana',
+=======
+                      'payment_options': 'card, banktransfer, ussd, mpesa, mobile_money_rwanda,mobile_money_uganda, mobile_money_zambia, mobile_money_ghana',
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
                       'title': 'Flutterwave payment',
                       'currency': "UGX",
                       'tx_ref':
@@ -81,9 +102,15 @@ class _TimFlutterExampleState extends State<TimFlutterExample> {
                       'icon':
                           "https://www.aqskill.com/wp-content/uploads/2020/05/logo-pde.png",
                       'public_key':
+<<<<<<< HEAD
                           "FLWPUBK_TEST-bef5d259e2f13e98debf9fb18af5cbf5-X",
                       'sk_key':
                           'FLWSECK_TEST-5fa1e6a732ec05ceb06928840dca4d92-X'
+=======
+                          "FLWPUBK_TEST-e0787ab2e5b0b6fcb3d32ce465ad44d0-X",
+                      'sk_key':
+                          'FLWSECK_TEST-af1af523da3f141f894a26be4b071230-X'
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
                     };
 
                     Navigator.push(
@@ -93,6 +120,7 @@ class _TimFlutterExampleState extends State<TimFlutterExample> {
                       ),
                     ).then((response) {
                       //response is the response from the payment
+<<<<<<< HEAD
                       //print(response);
                       print(response['=================']);
                       print(response['status']);
@@ -121,10 +149,14 @@ class _TimFlutterExampleState extends State<TimFlutterExample> {
                       res = true;
                       //res1 = response;
                       // set up the AlertDialog
+=======
+                      print(response);
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
                     });
                   },
                   child: const Text('Pay'),
                 ),
+<<<<<<< HEAD
 
                 if (res!)
                   const Text(
@@ -136,6 +168,8 @@ class _TimFlutterExampleState extends State<TimFlutterExample> {
                   )
 
                 // }
+=======
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
               ],
             ),
           ),

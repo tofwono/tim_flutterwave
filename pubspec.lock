@@ -67,6 +67,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   flutter_webview_pro:
     dependency: "direct main"
     description:
@@ -76,6 +77,8 @@ packages:
       url: "git@github.com:tofwono/webview_flutter.git"
     source: git
     version: "3.0.1+4"
+=======
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
   http:
     dependency: "direct main"
     description:
@@ -200,6 +203,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
+<<<<<<< HEAD
   webview_pro_android:
     dependency: transitive
     description:
@@ -224,3 +228,36 @@ packages:
 sdks:
   dart: ">=2.17.5 <3.0.0"
   flutter: ">=2.5.0"
+=======
+  webview_flutter:
+    dependency: "direct main"
+    description:
+      name: webview_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.4"
+  webview_flutter_android:
+    dependency: transitive
+    description:
+      name: webview_flutter_android
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.10.3"
+  webview_flutter_platform_interface:
+    dependency: transitive
+    description:
+      name: webview_flutter_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.9.5"
+  webview_flutter_wkwebview:
+    dependency: transitive
+    description:
+      name: webview_flutter_wkwebview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.9.5"
+sdks:
+  dart: ">=2.17.5 <3.0.0"
+  flutter: ">=3.0.0"
+>>>>>>> 8a0d248545a248527bc9450bcb4d6bbdf18c2a9d
